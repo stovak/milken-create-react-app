@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "allowJs": true,
+    "checkJs": true,
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,7 +19,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "listEmittedFiles": true,
+    "jsx": "react",
+    "types": [
+      "jquery",
+      "bootstrap",
+      "node",
+      "youtube"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "include": [
     "src"
